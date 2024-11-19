@@ -1,8 +1,3 @@
-# Smartphone Price Prediction System
-
-A machine learning-powered web application that predicts smartphone prices based on specifications like brand, RAM, ROM, camera quality, and battery capacity. The project features a **Flask web application** for real-time price predictions and a **Dash dashboard** for interactive visualizations, helping users and retailers make informed decisions.
-
----
 
 ## 1. Introduction
 
