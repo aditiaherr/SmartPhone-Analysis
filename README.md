@@ -1,18 +1,79 @@
-1. INTRODUCTION
-   
-2.Problem Statement:
+1. Introduction
+Purpose of the Project
+This project aims to develop a system that predicts smartphone prices based on their technical specifications, providing a valuable tool for retailers and consumers. The solution uses machine learning to forecast prices, along with a user-friendly web interface and dashboard for analysis.
 
-The rapid evolution of the mobile phone industry has resulted in the emergence of numerous models, each with unique features, specifications, and price points. Mobile shop owners often face challenges in keeping up with the latest models and providing accurate recommendations to customers. The project aims to develop a machine learning model, using the Random Forest algorithm in Python, to predict smartphone prices for a retailer’s website. This website will allow retailers to estimate smartphone prices and includes a dashboard for visualizing the relationships between various smartphone features and their impact on price.
+Importance of Price Prediction
+With the growing smartphone market, accurate price prediction helps retailers set competitive pricing strategies and enables consumers to evaluate options based on specifications, ensuring value for money.
 
-3.Project Idea:
+Project Scope
+The project involves:
 
-The project focuses on building a prediction model that forecasts the price of a smartphone using technical specifications such as RAM, ROM, camera resolution, battery power, and brand. The website allows users to input smartphone features and retrieve an estimated price. The integrated dashboard provides comparative insights using graphical representations of the dataset, helping retailers make informed decisions regarding product pricing and inventory.
+Price Prediction: Using a Random Forest regression model to predict smartphone prices.
+Flask Web Application: Allowing users to input specifications and view predictions.
+Dash Dashboard: Visualizing feature relationships and trends in smartphone data.
+2. Problem Statement
+This project addresses the following challenges:
 
-4.Motivation:
+Complex Pricing Decisions: Provides retailers with tools to estimate prices based on key specifications.
+Data Insights: Helps analyze how different features (e.g., RAM, battery capacity) influence pricing.
+Real-Time Predictions: Offers an interface for instant feedback on price estimates.
+3. Architecture
+The architecture of the project includes:
 
-The smartphone market is highly competitive, with various models featuring different configurations and price points. Accurately predicting smartphone prices based on their specifications can help retailers price their products competitively, and assist customers in comparing options efficiently. This project serves both consumers and retailers by offering accurate price predictions and detailed attribute comparisons.
+Frontend (Flask Web App):
+Collects user inputs for smartphone specifications.
+Displays the predicted price based on the machine learning model.
+Backend (Flask API):
+Processes data inputs and interacts with the Random Forest model for predictions.
+Machine Learning Model:
+Trained on a dataset of 836 smartphones with key attributes like RAM, ROM, and camera specifications.
+Achieves an R² score of 0.91, ensuring accurate predictions.
+Dashboard (Dash):
+Displays visualizations for feature analysis, such as price vs RAM or brand vs price.
+4. Dataset
+The dataset consists of 836 smartphone models with the following attributes:
 
-5.Scope:
+Brand: Manufacturer of the smartphone.
+RAM/ROM: Memory and storage capacity.
+Camera Specifications: Resolution of front and rear cameras.
+Battery Power: Battery capacity in mAh.
+Price: Target variable for prediction.
+5. Technologies Used
+Programming Language: Python
+Libraries: Scikit-learn, Flask, Dash, Pandas, NumPy
+Machine Learning Model: Random Forest Regressor
+Frontend: HTML, CSS, Flask Templates
+Visualization: Dash and Plotly
+6. Features
+Price Prediction: Enter smartphone specifications and get price estimates.
+Interactive Dashboard: Compare features and their impact on pricing.
+High Accuracy: Achieves R² = 0.91 and low MSE, ensuring reliable predictions.
+Scalable Design: Can accommodate more features or datasets in the future.
+7. Results
+Prediction Accuracy:
+R² score: 0.91
+Mean Squared Error (MSE): 7309.82
+Mean Absolute Error (MAE): 2375.18
+Dashboard: Provides dynamic visualizations for feature analysis.
+User Interface: Allows easy input of specifications and viewing results in real time.
+8. How to Run the Project
+Clone the repository:
 
-This project is designed for use by smartphone retailers, enabling them to predict the price of new or existing smartphone models based on their technical specifications. The system also provides a visual dashboard to compare different smartphone features like battery capacity, camera quality, and RAM, giving retailers better control over inventory pricing. The predictive model and dashboard can be further expanded to include additional features or attributes and can be applied to other product categories.
+bash
+Copy code
+git clone https://github.com/aditiaherr/Smartphone-Price-Prediction.git
+cd Smartphone-Price-Prediction
+Install dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Run the Flask app:
+
+bash
+Copy code
+python app.py
+Access the web app: Open your browser and navigate to http://localhost:5000.
+
+Explore the dashboard: Navigate to http://localhost:5000/dashboard for visualizations.
 
