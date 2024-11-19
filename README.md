@@ -81,9 +81,9 @@ The dataset consists of 836 smartphone models with the following attributes:
   - Mean Squared Error (MSE): 7309.82
   - Mean Absolute Error (MAE): 2375.18
     
-                       ![GUI Image](https://raw.githubusercontent.com/aditiaherr/SmartPhone-Analysis/main/GUI.png)
+  ![GUI Image](https://raw.githubusercontent.com/aditiaherr/SmartPhone-Analysis/main/GUI.png)
     
-                       ![Dashboard Image](https://raw.githubusercontent.com/aditiaherr/SmartPhone-Analysis/main/dashboard.png)
+  ![Dashboard Image](https://raw.githubusercontent.com/aditiaherr/SmartPhone-Analysis/main/dashboard.png)
  
 - **Dashboard**: Provides dynamic visualizations for feature analysis.
 - **User Interface**: Allows easy input of specifications and viewing results in real time.
