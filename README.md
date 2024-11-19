@@ -74,6 +74,7 @@ The dataset consists of 836 smartphone models with the following attributes:
 
 ![Prediction Image](https://raw.githubusercontent.com/aditiaherr/SmartPhone-Analysis/main/predcition.png)
 
+![Prediction Image](https://raw.githubusercontent.com/aditiaherr/SmartPhone-Analysis/main/predicition.png)
 
 - **Prediction Accuracy**: 
   - R² score: 0.91
